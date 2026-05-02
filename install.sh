@@ -2,7 +2,8 @@
 set -euo pipefail
 
 repo_url="${MATURE_APP_FOUNDATION_REPO:-https://github.com/Simondarcy7/mature-app-foundation.git}"
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd || pwd)"
+script_path="${BASH_SOURCE[0]:-$0}"
+repo_root="$(cd "$(dirname "$script_path")" 2>/dev/null && pwd || pwd)"
 tmp_repo=""
 target="."
 agent="both"
