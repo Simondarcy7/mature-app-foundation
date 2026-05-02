@@ -1,29 +1,64 @@
 # Mature App Foundation
 
-A practical starter toolkit for founders and builders who want mature product, UX, architecture,
-testing, and Codex-agent setup from day one.
+A practical startup app foundation toolkit for product thinking, UX/UI, architecture, testing,
+AI-agent setup, and token-efficient software engineering.
 
-This toolkit is intentionally sector-neutral. It is not a template app, legal guide, compliance
-guide, or replacement for domain experts. It is a reusable operating system for starting serious
-software projects with better defaults.
+This is not a template app. It is a playbook and installable toolkit you can use before building
+any serious app, whether you are a founder, designer, product operator, or developer.
 
-## What It Gives You
+## Who This Is For
 
-- A startup/app blueprint.
-- A new-project kickoff checklist.
-- Default technical preferences with room for better project-specific choices.
-- Copyable `AGENTS.md` layers for Codex projects.
-- ADR templates for durable architecture decisions.
-- UX/UI and motion principles for product-quality interfaces.
-- MVP boundary and screen-state mapping.
-- Runtime config and environment separation.
-- Service-boundary and stub strategy for uncertain integrations.
+- Founders who want a better starting point than a blank repo.
+- Developers who want mature defaults without over-engineering.
+- Product and UX people who want reusable startup app planning structure.
+- Teams using Codex, Claude Code, or similar AI coding agents.
+
+## What You Get
+
+- App/startup blueprint.
+- New-project kickoff checklist.
+- MVP boundary and screen-state map.
+- UX, UI, and motion principles.
+- Design-system primitive guidance.
+- Default technical preferences with explicit override rules.
+- Runtime config and environment separation guidance.
+- Service-boundary and typed-stub strategy.
 - Testing strategy by risk.
-- PR and handoff templates for short startup sessions.
-- Design-system primitives.
-- Token-utilization guidance for lower-cost, higher-signal AI-assisted development.
-- Portable Codex skill and custom agent templates.
-- A continuous learning loop so project lessons improve the toolkit over time.
+- PR and handoff playbook.
+- Token-utilization guidance.
+- Codex and Claude-compatible skills.
+- Copyable `AGENTS.md` and `CLAUDE.md` templates.
+- Optional custom agents for planning, UX, architecture, and review.
+
+## One-Command Install
+
+Install into an existing or new project:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Simondarcy7/mature-app-foundation/main/install.sh | bash -s -- --target my-new-app --agent both
+```
+
+Safer clone-first option:
+
+```sh
+git clone https://github.com/Simondarcy7/mature-app-foundation
+cd mature-app-foundation
+./install.sh --target ../my-new-app --agent both
+```
+
+Dry-run first:
+
+```sh
+./install.sh --target ../my-new-app --agent both --dry-run
+```
+
+Agent options:
+
+- `--agent codex`: installs `AGENTS.md` and `.agents/skills/`.
+- `--agent claude`: installs `CLAUDE.md`, `.claude/skills/`, and `.claude/commands/`.
+- `--agent both`: installs both sets.
+
+See `docs/installation.md` for details.
 
 ## Recommended Defaults
 
@@ -35,51 +70,55 @@ context justifies them, and record meaningful deviations in an ADR.
 - Expo React Native by default for mobile or cross-platform.
 - Framework-native routing with thin route/page/screen files.
 - Feature modules for product capabilities.
-- Typed service boundaries for APIs, analytics, auth, storage, and backend integrations.
+- Typed service boundaries for APIs, analytics, auth, storage, AI, and backend integrations.
 - Centralized runtime config.
 - Typed analytics and error-reporting wrappers.
 - Typecheck/lint from day one.
 - ADRs for stack, backend, testing, analytics/observability, and sensitive-data handling.
 
+## Start Here
+
+For non-developers:
+
+1. Read `docs/app-startup-blueprint.md`.
+2. Read `docs/mvp-boundary-and-screen-map.md`.
+3. Use `docs/kickoff-checklist.md` to prepare the first build.
+4. Share the repo with a developer or AI coding agent.
+
+For developers:
+
+1. Run `./install.sh --target <project> --agent both --dry-run`.
+2. Run it again without `--dry-run` when the output looks right.
+3. Create first ADRs from `templates/adr-template.md`.
+4. Use the installed skills to run kickoff, ADR, handoff, and learning-loop workflows.
+
 ## Repository Map
 
 ```text
-docs/
-  app-startup-blueprint.md
-  kickoff-checklist.md
-  agents-md-layers.md
-  adr-templates.md
-  design-system-primitives.md
-  mvp-boundary-and-screen-map.md
-  pr-and-handoff-playbook.md
-  runtime-config-and-environments.md
-  service-boundaries-and-stubs.md
-  testing-strategy.md
-  ux-ui-motion-principles.md
-  token-utilization.md
-  continuous-learning-loop.md
-  portable-codex-setup.md
-  notion-operating-model.md
-codex/
-  skills/mature-app-starter/
-  agents/
-templates/
-  AGENTS.md
-  src-features-AGENTS.md
-  src-services-AGENTS.md
-  adr-template.md
-notion/
-  blueprint-page-map.md
+docs/        Human-readable playbook
+  installation.md
+  agent-compatibility.md
+  ecosystem-addons.md
+  optional-integrations.md
+  custom-skills.md
+templates/   Copyable AGENTS.md, CLAUDE.md, and ADR templates
+codex/       Codex-compatible skills and custom agents
+claude/      Claude Code slash-command templates
+notion/      Notion page map
+install.sh   Installer for Codex, Claude, or both
 ```
 
-## Quick Start
+## Optional Integrations
 
-1. Read `docs/app-startup-blueprint.md`.
-2. Use `docs/kickoff-checklist.md` before repo setup.
-3. Copy `templates/AGENTS.md` into the new repo root.
-4. Add domain instruction files only where they reduce repeated mistakes.
-5. Create the first ADRs from `templates/adr-template.md`.
-6. If using Codex, install or copy the skill in `codex/skills/mature-app-starter`.
+The toolkit works without external services. Useful optional integrations include:
+
+- Notion for the readable playbook and reusable learnings log.
+- GitHub for issues, PRs, source control, and public sharing.
+- Sentry for error reporting.
+- PostHog or Amplitude for product analytics.
+- Vercel for web deployment and preview environments.
+
+See `docs/optional-integrations.md`.
 
 ## License
 

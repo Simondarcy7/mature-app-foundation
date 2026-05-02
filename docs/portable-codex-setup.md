@@ -1,22 +1,44 @@
 # Portable Codex Setup
 
-This repository includes Codex assets that can be copied into local Codex configuration.
+This repository includes Codex assets that can be installed into a project or copied into local
+Codex configuration.
 
-## Skill
+For the recommended project installer, see `docs/installation.md`.
+
+## Project Installer
+
+Install the toolkit into a project with:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Simondarcy7/mature-app-foundation/main/install.sh | bash -s -- --target my-new-app --agent both
+```
+
+Use `--agent codex`, `--agent claude`, or `--agent both` depending on the coding agents used by
+the project.
+
+## Skills
 
 Copy:
 
 ```text
-codex/skills/mature-app-starter
+codex/skills/*
 ```
 
 to:
 
 ```text
-~/.agents/skills/mature-app-starter
+~/.agents/skills/
 ```
 
-Then restart Codex if the skill does not appear.
+Then restart Codex if the skills do not appear.
+
+For Claude Code projects, copy the same skill folders to:
+
+```text
+.claude/skills/
+```
+
+The installer handles these paths automatically.
 
 ## Custom Agents
 

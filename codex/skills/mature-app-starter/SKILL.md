@@ -122,6 +122,15 @@ When the user asks how to make the toolkit portable between Codex projects or ma
 When the user asks to document the toolkit in Notion or maintain a reusable knowledge base, read
 `references/notion-toolkit-map.md`.
 
+When the user asks which skills are available or what workflows the toolkit can automate, use
+`docs/foundation/custom-skills.md` if present.
+
+When the user asks about Codex versus Claude support, use `docs/foundation/agent-compatibility.md`
+if present.
+
+When the user asks about GitHub, Notion, Sentry, analytics, or deployment integrations, use
+`docs/foundation/optional-integrations.md` if present.
+
 When extracting lessons from an active project back into the toolkit, read
 `references/continuous-learning-loop.md`.
 
