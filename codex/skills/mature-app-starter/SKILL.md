@@ -1,0 +1,124 @@
+---
+name: mature-app-starter
+description: Use when starting, planning, evaluating, or setting up a new app and the user wants mature product, UX, technology, security, accessibility, testing, or software engineering foundations. Relevant for early-stage consumer, productivity, marketplace, SaaS, internal tool, mobile, web, or API-backed apps before implementation begins.
+---
+
+# Mature App Starter
+
+Use this skill to establish a strong baseline before building a new app. Keep the output practical:
+decisions, tradeoffs, file structure, verification, and next actions.
+
+## First Pass
+
+Start by identifying:
+
+- Target users and their high-stakes moments.
+- Core job-to-be-done and first valuable workflow.
+- Platform target: web, mobile, Expo, native, desktop, or API-first.
+- Domain risk: privacy, safety, compliance, accessibility, payments, identity, user-generated content, regulated data, or sensitive workflows.
+- Current stage: idea, prototype, MVP, beta, production, or rebuild.
+
+If the user has not provided enough context, make conservative assumptions and label them.
+
+## Product And UX Baseline
+
+- Build the real primary workflow first, not a landing page.
+- Keep information architecture simple: primary nav, main task surface, settings/account, and support/legal when needed.
+- Design for repeated use: dense enough to scan, clear states, predictable navigation, and low-friction recovery.
+- Include empty, loading, error, offline, permission-denied, and success states early.
+- Prefer accessibility by default: semantic controls, readable contrast, scalable text, keyboard/screen-reader paths, and touch targets.
+- For sensitive domains: avoid overclaiming, protect user data, clarify escalation paths where relevant, and design for trust and auditability.
+
+## Technology Baseline
+
+- Prefer boring, well-supported technology unless the product need justifies complexity.
+- Choose one app architecture and document it early.
+- Keep route/screen files thin; put product logic in feature modules.
+- Keep external systems behind typed service boundaries.
+- Centralize environment config and never scatter secret or environment reads across UI code.
+- Use structured domain types close to the feature first; promote to shared types only after reuse is real.
+- Add observability, analytics, and error reporting behind wrappers before calls spread.
+
+## Engineering Setup
+
+Recommend a starter structure like:
+
+```text
+app-or-routes/
+src/
+  features/
+  components/
+  services/
+  lib/
+  config/
+  types/
+  test/
+docs/
+  adr/
+  project-index.md
+  engineering-workflow.md
+```
+
+Create or recommend:
+
+- Root `AGENTS.md` for project-wide rules.
+- Domain `AGENTS.md` files for `src/features/`, `src/services/`, and backend/schema folders when they exist.
+- ADRs for stack choice, backend strategy, testing strategy, analytics/observability, and sensitive-data handling.
+- A focused task workflow skill only when the project has a repeated task process.
+
+## Verification Baseline
+
+- Typecheck and lint from the start.
+- Unit-test domain logic, calculations, parsing, permissions, and state transitions.
+- Component-test critical UI states where practical.
+- Add end-to-end smoke tests after the first stable workflow exists.
+- Manual UX checks are required for responsive layout, accessibility, and mobile ergonomics.
+
+## Security And Data Baseline
+
+- Classify data by sensitivity before modeling storage.
+- Keep secrets server-side and out of app bundles.
+- Add auth only when the product workflow needs identity; when added, design roles and recovery paths deliberately.
+- For sensitive or regulated domains, treat privacy, audit trails, consent, retention, and export/deletion as first-class requirements.
+- Avoid collecting data that is not needed for the first useful workflow.
+
+## Blueprint Reference
+
+When the user asks for a project blueprint, setup checklist, or reusable starting template, read
+`references/project-blueprint.md` and adapt it to the project.
+
+When creating project instruction files, read `references/starter-agents-template.md`.
+
+When creating architecture decision records, read `references/adr-templates.md`.
+
+When the user asks for UX, UI, animation, interaction, or design-quality guidance, read
+`references/ux-ui-motion-principles.md`.
+
+When the user asks about token cost, context usage, or efficient AI-assisted development, read
+`references/token-utilization.md`.
+
+When kicking off a brand-new project before a repo has settled, read `references/kickoff-checklist.md`.
+
+When the user asks how to make the toolkit portable between Codex projects or machines, read
+`references/portable-setup.md`.
+
+When the user asks to document the toolkit in Notion or maintain a reusable knowledge base, read
+`references/notion-toolkit-map.md`.
+
+When extracting lessons from an active project back into the toolkit, read
+`references/continuous-learning-loop.md`.
+
+## Output Shape
+
+For a new app plan, return:
+
+1. Recommended product scope.
+2. Suggested architecture and stack.
+3. Starter folder structure.
+4. UX principles and key states.
+5. Security/privacy assumptions.
+6. Testing and verification plan.
+7. Suggested `AGENTS.md` layers.
+8. Next 3 to 5 implementation tasks.
+
+If implementation begins, keep changes small and create the foundation before feature breadth.
