@@ -97,6 +97,23 @@ When the user asks for UX, UI, animation, interaction, or design-quality guidanc
 When the user asks about token cost, context usage, or efficient AI-assisted development, read
 `references/token-utilization.md`.
 
+When defining MVP boundaries, screen maps, first beta scope, or product states, read
+`references/mvp-boundary-and-screen-map.md`.
+
+When planning uncertain backends, vendors, APIs, AI features, analytics, auth, storage, or typed
+mock/stub behavior, read `references/service-boundaries-and-stubs.md`.
+
+When setting up environment variables, preview/staging/production separation, or deployment flow,
+read `references/runtime-config-and-environments.md`.
+
+When choosing verification strategy, read `references/testing-strategy.md`.
+
+When preparing pull requests, stop-start handoffs, or review checklists, read
+`references/pr-and-handoff-playbook.md`.
+
+When building shared UI primitives, themes, or app shell components, read
+`references/design-system-primitives.md`.
+
 When kicking off a brand-new project before a repo has settled, read `references/kickoff-checklist.md`.
 
 When the user asks how to make the toolkit portable between Codex projects or machines, read

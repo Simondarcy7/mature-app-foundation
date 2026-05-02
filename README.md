@@ -15,6 +15,12 @@ software projects with better defaults.
 - Copyable `AGENTS.md` layers for Codex projects.
 - ADR templates for durable architecture decisions.
 - UX/UI and motion principles for product-quality interfaces.
+- MVP boundary and screen-state mapping.
+- Runtime config and environment separation.
+- Service-boundary and stub strategy for uncertain integrations.
+- Testing strategy by risk.
+- PR and handoff templates for short startup sessions.
+- Design-system primitives.
 - Token-utilization guidance for lower-cost, higher-signal AI-assisted development.
 - Portable Codex skill and custom agent templates.
 - A continuous learning loop so project lessons improve the toolkit over time.
@@ -43,6 +49,12 @@ docs/
   kickoff-checklist.md
   agents-md-layers.md
   adr-templates.md
+  design-system-primitives.md
+  mvp-boundary-and-screen-map.md
+  pr-and-handoff-playbook.md
+  runtime-config-and-environments.md
+  service-boundaries-and-stubs.md
+  testing-strategy.md
   ux-ui-motion-principles.md
   token-utilization.md
   continuous-learning-loop.md
