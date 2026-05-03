@@ -1,6 +1,6 @@
 ---
 name: runtime-config-init
-description: Use when setting up environment variables, runtime config, preview/staging/production separation, deployment environment rules, or fail-fast config validation.
+description: Use when centralizing runtime config, environment separation, or fail-fast env validation.
 ---
 
 # Runtime Config Init
@@ -9,7 +9,7 @@ Use this skill to centralize config and environment handling.
 
 ## Workflow
 
-1. Read `docs/foundation/runtime-config-and-environments.md` when present.
+1. Read `references/runtime-config-and-environments.md`; fall back to `docs/foundation/runtime-config-and-environments.md` when installed.
 2. Centralize runtime config in one module.
 3. Avoid direct env reads from UI/screens/components.
 4. Support development, preview, staging, and production where relevant.

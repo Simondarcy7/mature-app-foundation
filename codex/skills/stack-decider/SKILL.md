@@ -1,6 +1,6 @@
 ---
 name: stack-decider
-description: Use when choosing or revisiting app stack, frontend framework, mobile approach, backend, hosting, testing tools, analytics, observability, or when deciding whether to deviate from the toolkit defaults.
+description: Use when explicitly choosing a stack or documenting a deviation from toolkit defaults.
 ---
 
 # Stack Decider

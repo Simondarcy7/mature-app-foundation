@@ -17,11 +17,12 @@ Use this skill to decide whether a project lesson should improve the toolkit.
 
 ## Workflow
 
-1. Decide whether the learning is project-specific or reusable.
-2. Classify it: Product, UX, Architecture, Data, Testing, Security, Workflow, Tooling, or Token Use.
-3. Promote only lessons likely to apply to at least two future projects or prevent repeated setup mistakes.
-4. Propose updates to Notion, docs, skills, templates, or custom agents.
-5. Keep private/project-specific details out of public toolkit material.
+1. Read `references/continuous-learning-loop.md`; fall back to `docs/foundation/continuous-learning-loop.md` when installed.
+2. Decide whether the learning is project-specific or reusable.
+3. Classify it: Product, UX, Architecture, Data, Testing, Security, Workflow, Tooling, or Token Use.
+4. Promote only lessons likely to apply to at least two future projects or prevent repeated setup mistakes.
+5. Propose updates to Notion, docs, skills, templates, or custom agents.
+6. Keep private/project-specific details out of public toolkit material.
 
 ## Handoff Snippet
 

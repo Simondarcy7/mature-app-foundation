@@ -5,8 +5,8 @@ Use the installer to copy the toolkit into a project.
 ## Recommended
 
 ```sh
-git clone https://github.com/Simondarcy7/mature-app-foundation
-cd mature-app-foundation
+git clone https://github.com/Simondarcy7/blueprint-vs-rawdogging
+cd blueprint-vs-rawdogging
 ./install.sh --target ../my-new-app --agent both --dry-run
 ./install.sh --target ../my-new-app --agent both
 ```
@@ -14,7 +14,7 @@ cd mature-app-foundation
 ## One Command
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Simondarcy7/mature-app-foundation/main/install.sh | bash -s -- --target my-new-app --agent both
+curl -fsSL https://raw.githubusercontent.com/Simondarcy7/blueprint-vs-rawdogging/main/install.sh | bash -s -- --target my-new-app --agent both
 ```
 
 When run this way, the installer fetches the latest toolkit source into a temporary directory, then
@@ -25,7 +25,7 @@ copies the selected files into your target project.
 If you want the whole toolkit as a starting folder rather than installing selected files:
 
 ```sh
-npx degit Simondarcy7/mature-app-foundation my-new-app
+npx degit Simondarcy7/blueprint-vs-rawdogging my-new-app
 ```
 
 This is simple, but it copies the toolkit repo itself. For app projects, the installer is usually a

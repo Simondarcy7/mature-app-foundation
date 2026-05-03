@@ -10,7 +10,7 @@ For the recommended project installer, see `docs/installation.md`.
 Install the toolkit into a project with:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Simondarcy7/mature-app-foundation/main/install.sh | bash -s -- --target my-new-app --agent both
+curl -fsSL https://raw.githubusercontent.com/Simondarcy7/blueprint-vs-rawdogging/main/install.sh | bash -s -- --target my-new-app --agent both
 ```
 
 Use `--agent codex`, `--agent claude`, or `--agent both` depending on the coding agents used by

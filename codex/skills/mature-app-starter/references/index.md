@@ -1,0 +1,24 @@
+# Mature App Starter Reference Index
+
+Load only the file needed for the user's request.
+
+| Request | Reference |
+| --- | --- |
+| Project blueprint, setup checklist, or reusable starting template | `project-blueprint.md` |
+| Project instruction files | `starter-agents-template.md` |
+| Architecture decision records | `adr-templates.md` |
+| UX, UI, animation, interaction, or design-quality guidance | `ux-ui-motion-principles.md` |
+| Token cost, context usage, or efficient AI-assisted development | `token-utilization.md` |
+| MVP boundaries, screen maps, beta scope, or product states | `mvp-boundary-and-screen-map.md` |
+| Uncertain backends, vendors, APIs, AI, analytics, auth, storage, or stubs | `service-boundaries-and-stubs.md` |
+| Environment variables, staging, previews, production, or deployment flow | `runtime-config-and-environments.md` |
+| Verification strategy | `testing-strategy.md` |
+| Pull requests, handoffs, or review checklists | `pr-and-handoff-playbook.md` |
+| Shared UI primitives, themes, or app shell components | `design-system-primitives.md` |
+| Brand-new project kickoff | `kickoff-checklist.md` |
+| Portable setup across Codex projects or machines | `portable-setup.md` |
+| Notion or reusable knowledge-base documentation | `notion-toolkit-map.md` |
+| Available skills and automated workflows | `custom-skills.md` from installed `docs/foundation/` when present |
+| Codex versus Claude support | `agent-compatibility.md` from installed `docs/foundation/` when present |
+| GitHub, Notion, Sentry, analytics, or deployment integrations | `optional-integrations.md` from installed `docs/foundation/` when present |
+| Capturing reusable toolkit lessons | `continuous-learning-loop.md` |

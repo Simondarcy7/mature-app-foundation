@@ -10,7 +10,7 @@ Use this skill to create layered project instructions without bloating context.
 ## Workflow
 
 1. Inspect existing project structure.
-2. Use `docs/foundation/agents-md-layers.md` and `templates/AGENTS.md` when available.
+2. Use `references/agents-md-layers.md`; fall back to `docs/foundation/agents-md-layers.md` and `templates/AGENTS.md` when installed.
 3. Create a root instruction file for project-wide behavior.
 4. Add nested instruction files only where folder-specific rules reduce repeated mistakes.
 5. For Claude Code, emit `CLAUDE.md` with equivalent root guidance.

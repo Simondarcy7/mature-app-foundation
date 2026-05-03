@@ -9,7 +9,7 @@ Use this skill to keep agent context high-signal.
 
 ## Workflow
 
-1. Read `docs/foundation/token-utilization.md` when present.
+1. Read `references/token-utilization.md`; fall back to `docs/foundation/token-utilization.md` when installed.
 2. Inspect active instruction files, skills, and prompt-heavy docs.
 3. Flag repeated rules, overly broad guidance, large always-loaded files, and stale context.
 4. Recommend what belongs in root instructions versus triggerable skills versus references.

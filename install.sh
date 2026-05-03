@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_url="${MATURE_APP_FOUNDATION_REPO:-https://github.com/Simondarcy7/mature-app-foundation.git}"
+repo_url="${BLUEPRINT_VS_RAWDOGGING_REPO:-https://github.com/Simondarcy7/blueprint-vs-rawdogging.git}"
 script_path="${BASH_SOURCE[0]:-$0}"
 repo_root="$(cd "$(dirname "$script_path")" 2>/dev/null && pwd || pwd)"
 tmp_repo=""
@@ -21,7 +21,7 @@ trap cleanup EXIT
 
 usage() {
   cat <<'USAGE'
-Mature App Foundation installer
+Blueprint vs Rawdogging installer
 
 Usage:
   ./install.sh [--target DIR] [--agent codex|claude|both] [--force] [--dry-run] [--no-docs] [--install-user-assets]
@@ -195,7 +195,7 @@ if [[ "$install_user_assets" -eq 1 ]]; then
 fi
 
 say ""
-say "Done. Installed Mature App Foundation into: $target"
+say "Done. Installed Blueprint vs Rawdogging into: $target"
 say "Agent target: $agent"
 if [[ "$dry_run" -eq 1 ]]; then
   say "Dry-run only; no files were changed."

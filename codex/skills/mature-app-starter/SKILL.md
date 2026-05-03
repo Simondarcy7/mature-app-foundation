@@ -1,6 +1,6 @@
 ---
 name: mature-app-starter
-description: Use when starting, planning, evaluating, or setting up a new app and the user wants mature product, UX, technology, security, accessibility, testing, or software engineering foundations. Relevant for early-stage consumer, productivity, marketplace, SaaS, internal tool, mobile, web, or API-backed apps before implementation begins.
+description: Use when a greenfield app needs a mature foundation plan before implementation.
 ---
 
 # Mature App Starter
@@ -84,55 +84,8 @@ Create or recommend:
 
 ## Blueprint Reference
 
-When the user asks for a project blueprint, setup checklist, or reusable starting template, read
-`references/project-blueprint.md` and adapt it to the project.
-
-When creating project instruction files, read `references/starter-agents-template.md`.
-
-When creating architecture decision records, read `references/adr-templates.md`.
-
-When the user asks for UX, UI, animation, interaction, or design-quality guidance, read
-`references/ux-ui-motion-principles.md`.
-
-When the user asks about token cost, context usage, or efficient AI-assisted development, read
-`references/token-utilization.md`.
-
-When defining MVP boundaries, screen maps, first beta scope, or product states, read
-`references/mvp-boundary-and-screen-map.md`.
-
-When planning uncertain backends, vendors, APIs, AI features, analytics, auth, storage, or typed
-mock/stub behavior, read `references/service-boundaries-and-stubs.md`.
-
-When setting up environment variables, preview/staging/production separation, or deployment flow,
-read `references/runtime-config-and-environments.md`.
-
-When choosing verification strategy, read `references/testing-strategy.md`.
-
-When preparing pull requests, stop-start handoffs, or review checklists, read
-`references/pr-and-handoff-playbook.md`.
-
-When building shared UI primitives, themes, or app shell components, read
-`references/design-system-primitives.md`.
-
-When kicking off a brand-new project before a repo has settled, read `references/kickoff-checklist.md`.
-
-When the user asks how to make the toolkit portable between Codex projects or machines, read
-`references/portable-setup.md`.
-
-When the user asks to document the toolkit in Notion or maintain a reusable knowledge base, read
-`references/notion-toolkit-map.md`.
-
-When the user asks which skills are available or what workflows the toolkit can automate, use
-`docs/foundation/custom-skills.md` if present.
-
-When the user asks about Codex versus Claude support, use `docs/foundation/agent-compatibility.md`
-if present.
-
-When the user asks about GitHub, Notion, Sentry, analytics, or deployment integrations, use
-`docs/foundation/optional-integrations.md` if present.
-
-When extracting lessons from an active project back into the toolkit, read
-`references/continuous-learning-loop.md`.
+For deeper guidance, read `references/index.md` first and then load only the specific referenced
+file needed for the user's request.
 
 ## Output Shape
 

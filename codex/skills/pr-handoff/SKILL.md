@@ -9,7 +9,7 @@ Use this skill to make work reviewable and resumable.
 
 ## Workflow
 
-1. Read `docs/foundation/pr-and-handoff-playbook.md` when present.
+1. Read `references/pr-and-handoff-playbook.md`; fall back to `docs/foundation/pr-and-handoff-playbook.md` when installed.
 2. Summarize product intent, architecture impact, scope, verification, known gaps, and follow-ups.
 3. Include screenshots/recordings when UI changed and available.
 4. Include reusable toolkit learning when the task produced a pattern worth promoting.

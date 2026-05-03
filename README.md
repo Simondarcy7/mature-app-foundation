@@ -35,14 +35,14 @@ any serious app, whether you are a founder, designer, product operator, or devel
 Install into an existing or new project:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Simondarcy7/mature-app-foundation/main/install.sh | bash -s -- --target my-new-app --agent both
+curl -fsSL https://raw.githubusercontent.com/Simondarcy7/blueprint-vs-rawdogging/main/install.sh | bash -s -- --target my-new-app --agent both
 ```
 
 Safer clone-first option:
 
 ```sh
-git clone https://github.com/Simondarcy7/mature-app-foundation
-cd mature-app-foundation
+git clone https://github.com/Simondarcy7/blueprint-vs-rawdogging
+cd blueprint-vs-rawdogging
 ./install.sh --target ../my-new-app --agent both
 ```
 
